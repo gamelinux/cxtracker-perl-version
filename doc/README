@@ -1,0 +1,25 @@
+### cxtracker.pl (The perl version) Just a proofe of concept..
+### Dont use in prod :)
+Currently you can use it just to see or record your connections on
+your network.
+See '$ cxtracker.pl --help' for updated info
+cxtracker.pl --help
+Usage:
+     $ cxtracker.pl [options]
+
+     OPTIONS:
+
+     --dev|-d       : network device (default: eth0)
+     --sguil        : enables sguil output and sets output dir
+     --daemon       : enables daemon mode
+     --debug        : enable debug messages (default: 0 (disabled))
+     --help         : this help message
+     --version      : show cxtracker.pl version
+
+# Examples
+To just try out and see whats going on on your network (wlan0):
+$ ./cxtracker.pl --dev wlan0
+
+To have it work with sguil, sending it to daemon world, using eth0:
+$ ./cxtracker.pl --dev eth0 --daemon --sguil /sguil_data/`hostname -s`/sancp/
+

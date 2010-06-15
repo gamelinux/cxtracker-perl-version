@@ -1,0 +1,7 @@
+# On a Ubuntu system:
+$ sudo aptitude install libnet-pcap-perl libgetopt-long-descriptive-perl git-core libdatetime-perl libpcap0.8
+$ git clone git://github.com/gamelinux/cxtracker-perl-version.git
+
+# PERL
+$ sudo perl cxtracker-perl-version/sbin/cxtracker.pl --help
+
